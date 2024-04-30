@@ -1,0 +1,39 @@
+.mainbox {
+  display: inline-block;
+  margin: 1rem;
+  width: 10%;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+}
+.mainbox .settingsbox {
+  border: 0.0625rem solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.875rem;
+  padding: 16px;
+  border-radius: 5px;
+}
+.mainbox .base {
+  background-color: rgb(0, 21, 255);
+}
+.mainbox .important {
+  background-color: rgb(8, 0, 123);
+}
+.mainbox .warning {
+  background-color: rgb(0, 221, 255);
+}
+.mainbox .mainfont {
+  border: none;
+  font-size: 1rem;
+  font-family: "Franklin Gothic";
+  font-style: italic;
+}
+.mainbox .secundaryfont {
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.mainbox .shadow {
+  box-shadow: 1rem 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.8);
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,27 @@
+$primaryColor: rgb(255, 0, 0);
+$secundaryColor: rgba(141, 0, 0, 0.671);
+$terciaryColor: rgb(231, 170, 170);
+
+@mixin boxes {
+  border: 0.0625rem solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.875rem;
+  padding: 16px;
+  border-radius: 0;
+}
+
+@mixin tittlesettings {
+  border: none;
+  font-size: 2rem;
+  font-family: "Haettenschweiler";
+}
+
+@mixin subtittlesettings {
+  border: none;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+@mixin shadow-effect($shadow: 0.4rem) {
+  box-shadow: -1rem 0.4rem $shadow 0 rgba(0, 0, 0, 0.8);
+}

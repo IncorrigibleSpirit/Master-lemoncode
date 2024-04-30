@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  width: 100%;
+  margin-top: 2rem;
+}
+@media (max-width: 252px) {
+  .main-container {
+    display: block;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  gap: 6rem;
+  background-color: #84a98c;
+}
+@media (max-width: 600px) {
+  .nav {
+    gap: 3rem;
+  }
+}
+@media (max-width: 460px) {
+  .nav {
+    gap: 1rem;
+  }
+}
+@media (max-width: 351px) {
+  .nav {
+    gap: 0;
+  }
+}
+@media (max-width: 252px) {
+  .nav {
+    display: block;
+    justify-content: center;
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 12px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.1s ease;
+}
+@media (max-width: 460px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 351px) {
+  .btn {
+    font-size: 12px;
+  }
+}
+@media (max-width: 252px) {
+  .btn {
+    display: block;
+  }
+}
+
+.btn:hover,
+.btn--selected {
+  background-color: #52796f;
+  color: white;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,24 @@
+@mixin color-variation($color) {
+  //DARK BOXES
+  $dark: 4;
+  @while $dark > 0 {
+    .box.darken-#{$dark} {
+      background-color: darken($color, $dark * 5%);
+    }
+    $dark: $dark - 1;
+  }
+
+  //LIGHT BOXES
+  $light: 1;
+  @while $light <= 4 {
+    .box.lighten-#{$light} {
+      background-color: lighten($color, $light * 5%);
+    }
+    $light: $light + 1;
+  }
+
+  //NEUTRAL BOX
+  .box.base-color {
+    background-color: $color;
+  }
+}

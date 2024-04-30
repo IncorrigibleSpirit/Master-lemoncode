@@ -1,0 +1,97 @@
+html {
+  font-size: 87.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+h2 {
+  text-align: center;
+  margin: 2rem;
+  color: #14213d;
+  letter-spacing: 3.5;
+}
+
+.main-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 62.5rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.tourism-card {
+  max-width: 12.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(229, 229, 229, 0.3);
+  transition: all 0.4s;
+}
+.tourism-card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.tourism-card .card-content {
+  padding: 0 0.5rem;
+}
+.tourism-card .img-container {
+  max-width: 12.5rem;
+}
+.tourism-card .card-img {
+  width: 100%;
+}
+.tourism-card .card-tittle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0.625rem 0;
+  color: #14213d;
+}
+.tourism-card .card-desciption {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #14213d;
+}
+.tourism-card .card-published {
+  display: flex;
+  justify-content: end;
+  font-size: 0.625rem;
+  color: #14213d;
+  text-align: center;
+}
+.tourism-card .date {
+  display: flex;
+  justify-content: end;
+  font-size: 0.625rem;
+  color: #fca311;
+}
+
+.more-info {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.75rem;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 0.625rem;
+  transition: transform 0.1s ease;
+  color: white;
+  background-color: #14213d;
+}
+.more-info:hover {
+  background-color: #fca311;
+  color: #14213d;
+}
+.more-info:active {
+  transform: scale(0.99);
+}
+
+/*# sourceMappingURL=index.css.map */

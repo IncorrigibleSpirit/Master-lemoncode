@@ -1,0 +1,28 @@
+$primaryColor: rgb(0, 21, 255);
+$secundaryColor: rgb(8, 0, 123);
+$terciaryColor: rgb(0, 221, 255);
+
+@mixin boxes {
+  border: 0.0625rem solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.875rem;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+@mixin tittlesettings {
+  border: none;
+  font-size: 1rem;
+  font-family: "Franklin Gothic";
+  font-style: italic;
+}
+
+@mixin subtittlesettings {
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@mixin shadow-effect($shadow: 0.4rem) {
+  box-shadow: 1rem 0.4rem $shadow 0 rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,43 @@
+@use "mixins";
+
+$primary-color: rgb(255, 0, 0);
+$secundary-color: rgb(0, 0, 255);
+$terciary-color: rgb(0, 255, 0);
+
+.container {
+  display: flex;
+  gap: 0.25rem;
+  width: 50%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.box {
+  border-radius: 10%;
+  padding: 2rem 0.125rem;
+  flex: 1;
+
+  &.base-color {
+    flex: 2;
+  }
+
+  .color-box-text {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    justify-content: center;
+  }
+}
+
+.container-1 {
+  @include mixins.color-variation($primary-color);
+}
+
+.container-2 {
+  @include mixins.color-variation($secundary-color);
+}
+
+.container-3 {
+  @include mixins.color-variation($terciary-color);
+}
