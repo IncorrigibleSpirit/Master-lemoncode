@@ -1,0 +1,90 @@
+@use "breakpoints";
+@use "styles";
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: styles.$headerHeight;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+
+  @include breakpoints.laptopM {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.375rem;
+
+    @include breakpoints.tablet {
+      justify-content: flex-start;
+      width: 21.875rem;
+    }
+
+    @include breakpoints.laptopM {
+      width: 28.125rem;
+    }
+
+    .logo {
+      min-width: 1.25rem;
+      max-width: 7.5rem;
+    }
+
+    .platform-title {
+      display: none;
+
+      @include breakpoints.tablet {
+        display: flex;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.375rem;
+    gap: 1rem;
+
+    @include breakpoints.tablet {
+      justify-content: flex-end;
+      width: 21.875rem;
+    }
+
+    @include breakpoints.laptopM {
+      width: 28.125rem;
+    }
+
+    .inicio,
+    .buscar {
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: styles.$fontColor1;
+      padding: 0.375rem;
+      cursor: pointer;
+      transition: transform 0.1s ease;
+
+      &:hover {
+        color: styles.$fontColor1;
+        background-color: styles.$secundaryColor;
+        border-radius: 5%;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      @include breakpoints.mobile {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

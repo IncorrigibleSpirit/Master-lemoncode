@@ -1,0 +1,13 @@
+@use "styles";
+@use "breakpoints";
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.375rem;
+  justify-content: center;
+  padding-bottom: 2rem;
+  background-color: styles.$secundaryColor;
+  margin: 1rem auto;
+}

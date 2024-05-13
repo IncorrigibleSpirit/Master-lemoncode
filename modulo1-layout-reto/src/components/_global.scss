@@ -1,0 +1,27 @@
+@use "breakpoints";
+@use "styles";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "jost";
+  font-size: 1.125rem;
+  color: styles.$fontColor1;
+  background-color: styles.$primaryColor;
+}
+
+.main-container {
+  min-width: 20rem;
+  max-width: 78.75rem;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: styles.$primaryColor;
+  padding: 0.5rem;
+  padding: 1rem 0;
+}
