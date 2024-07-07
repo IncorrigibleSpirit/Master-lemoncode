@@ -1,0 +1,23 @@
+{
+  "name": "laboratorio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/lodash": "^4.17.6",
+    "buffer": "^6.0.3",
+    "lodash": "^4.17.21",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,12 @@
+import "./00-variables/variables";
+import "./01-practica/practica";
+import "./02-entregables/ejercicio-01";
+import "./02-entregables/ejercicio-02";
+import "./02-entregables/ejercicio-03";
+import "./02-entregables/ejercicio-04";
+import "./02-entregables/ejercicio-05";
+import "./03-retos/console-traces";
+import "./03-retos/flatten-array";
+import "./03-retos/memoization";
+import "./03-retos/tree";
+import "./03-retos/understandingJs";
