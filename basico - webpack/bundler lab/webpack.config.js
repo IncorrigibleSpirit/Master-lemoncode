@@ -10,8 +10,8 @@ export default {
   entry: ["./index.ts"],
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].[chunkhash].js",
-    assetModuleFilename: "[hash][ext][query]",
+    filename: "js/[name].[chunkhash].js",
+    assetModuleFilename: "images/[hash][ext][query]",
   },
   resolve: {
     extensions: [".js", ".ts"],
@@ -47,7 +47,7 @@ export default {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
         generator: {
-          filename: "[name][ext][query]",
+          filename: "fonts/[name][ext][query]",
         },
       },
       {
@@ -60,13 +60,13 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./index.html", // archivo desde el cual bebera
-      filename: "index.html", // archivo final - nombre para el bundle
+      filename: "html/index.html", // archivo final - nombre para el bundle
       scriptLoading: "blocking",
       hash: true,
     }),
     new MiniCssExtractPlugin({
       filename: "[name].[chunkhash].css",
-      chunkFilename: "[id].css",
+      chunkFilename: "css/[id].css",
     }),
   ],
   devServer: {
