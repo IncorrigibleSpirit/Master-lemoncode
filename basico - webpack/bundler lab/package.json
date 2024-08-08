@@ -1,7 +1,7 @@
 {
   "name": "bundler-lab",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "run-p -l type-check:watch start:dev",
