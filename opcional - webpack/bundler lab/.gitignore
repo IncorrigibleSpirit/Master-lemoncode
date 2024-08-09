@@ -1,0 +1,21 @@
+# Directorios de dependencias y generación
+node_modules/
+dist/
+build/
+
+# Archivos de log
+*.log
+
+# Archivos generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Archivos y directorios de IDE y editores de código
+.vscode/
+.idea/
+
+# Archivos de entorno
+.env
+
+# Archivos generados por el proceso de construcción
+coverage/
