@@ -1,0 +1,25 @@
+$primary-color: #013e49;
+$secondary-color: #027880;
+
+$border-color1: #6fa99a;
+$border-color2: #a9acae;
+
+$color-tints-1: #036b7417;
+
+$generic-shadow: 0 3rem 4rem rgb(0, 0, 0, 0.05);
+$box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+$color-accent-1: #f2f2f2;
+$color-accent-2: #03b2b6;
+$color-accent-3: #04e2e4;
+
+$color-body-background: linear-gradient(rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0.694)),
+  url("/assets/images/background.webp");
+
+$color-nav-bar-background: rgba(211, 212, 212, 0.221);
+
+//exportacion de variables a CSS
+:root {
+  --color-body-background: #{$color-body-background};
+  --color-accent-2: #{$color-accent-2};
+}

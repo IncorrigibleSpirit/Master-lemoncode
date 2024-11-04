@@ -1,0 +1,67 @@
+@import "@/styles/variables";
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color-nav-bar-background;
+  height: 6rem;
+  padding: 0.5rem;
+
+  .logo {
+    max-width: 4.375rem;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: rotate(480deg);
+    }
+  }
+
+  .nav-bar {
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      list-style: none;
+      padding: 0.5rem;
+      gap: 1rem;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 0.7 rem;
+        transition: transform 0.1s ease;
+        color: $color-accent-1;
+        gap: 0.5rem;
+
+        &:hover {
+          color: $color-accent-3;
+        }
+
+        &:active {
+          transform: scale(0.99);
+        }
+
+        span {
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          color: $color-accent-1;
+          gap: 0.5rem;
+
+          .icon {
+            color: $primary-color;
+            margin: 0.1875rem;
+            background-color: $color-accent-1;
+            border-radius: 50%;
+            padding: 0.0625rem;
+          }
+        }
+      }
+    }
+  }
+}

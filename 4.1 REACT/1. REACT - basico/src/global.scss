@@ -1,0 +1,25 @@
+@import "./styles/_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 0.1rem solid var(--color-accent-2);
+  outline-offset: 0.125rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "montserrat", sans-serif;
+  font-size: 16px;
+  background: var(--color-body-background);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}

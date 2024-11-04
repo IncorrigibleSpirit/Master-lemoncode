@@ -1,0 +1,54 @@
+@import "@/styles/variables";
+
+main {
+  width: 100%;
+  margin: 3.125rem auto;
+
+  .title {
+    font-size: 1.375rem;
+    margin-bottom: 1rem;
+    background-color: $color-nav-bar-background;
+    color: $color-accent-1;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 17.5rem;
+    max-width: 23.4375rem;
+    margin: 1rem;
+    background-image: url("@/assets/images/login.webp");
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+    background-size: cover;
+    border: $border-color2;
+    transition: transform 0.1s ease;
+    background-color: $primary-color;
+    border-radius: 0.9375rem;
+
+    &:active {
+      transform: scale(0.99);
+    }
+
+    .card_image_container {
+      max-width: 7.5rem;
+      margin: 1rem;
+
+      .card_image {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .card_content_container {
+      display: flex;
+      font-size: 1rem;
+      color: $color-accent-1;
+      font-weight: 400;
+      flex-direction: column;
+      gap: 0.3rem;
+      margin: 0.3125rem;
+    }
+  }
+}

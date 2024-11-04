@@ -1,0 +1,59 @@
+@import "@/styles/variables";
+
+.table-container {
+  display: flex;
+  min-width: 20rem;
+  max-width: 64rem;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.25rem auto;
+  gap: 1rem;
+  border-radius: 0.75rem;
+  min-height: 100vh;
+
+  caption {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0.625rem;
+  }
+
+  .table {
+    width: 90%;
+    background-color: $color-accent-1;
+
+    caption {
+      font-size: 1.125rem;
+      text-align: center;
+      color: $color-accent-1;
+      margin-bottom: 1rem;
+    }
+
+    .table-title {
+      font-size: 1.125rem;
+      color: $color-accent-1;
+      text-align: center;
+      vertical-align: middle;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background-color: $secondary-color;
+    }
+
+    tr:nth-child(even) {
+      background-color: $color-tints-1;
+    }
+
+    .table-data {
+      width: 100%;
+      background-color: $color-accent-1;
+      text-align: center;
+      font-weight: 500;
+      color: $secondary-color;
+      vertical-align: middle;
+      padding: 0.625rem;
+
+      img {
+        border-radius: 3.125rem;
+      }
+    }
+  }
+}

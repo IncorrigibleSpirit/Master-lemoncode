@@ -1,0 +1,69 @@
+@use "@/styles/medias";
+@import "@/styles/variables";
+
+nav {
+  display: flex;
+
+  .pagination {
+    display: flex;
+    min-width: 17.5rem;
+    max-width: 64rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    list-style: none;
+    padding: 0.625rem;
+
+    @include medias.mobile {
+      gap: 0.875rem;
+    }
+
+    @include medias.tablet {
+      gap: 1.5625rem;
+    }
+
+    @include medias.desktop {
+      gap: 2.1875rem;
+    }
+
+    .page-control {
+      cursor: pointer;
+      margin: 0 0.3125rem;
+
+      .back,
+      .next {
+        font-size: 1rem;
+        appearance: none;
+        background: none;
+        border: none;
+        color: $color-accent-1;
+        font-weight: 600;
+
+        &:hover {
+          color: $color-accent-3;
+        }
+      }
+    }
+
+    .page-number {
+      border: none;
+      color: $secondary-color;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0.5rem 0.75rem;
+      text-decoration: none;
+      border-radius: 3.125rem;
+      background-color: $color-accent-1;
+
+      &:hover {
+        background-color: $color-accent-3;
+        color: $color-accent-1;
+      }
+    }
+
+    .active {
+      background-color: $color-accent-3;
+      color: $color-accent-1;
+    }
+  }
+}
